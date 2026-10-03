@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog digital kuliner lokal dan UMKM Kota Kupang, Nusa Tenggara Timur.">
+  <title>Kuliner Kupang | Jelajahi Cita Rasa Lokal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Kuliner Kupang, kembali ke beranda">
+        <span class="brand-icon" aria-hidden="true">🍴</span>
+        <span>Kuliner <strong>Kupang</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#audio">Audio</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero section" id="beranda" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">JELAJAHI CITA RASA NUSA TENGGARA TIMUR</p>
+          <h1 id="hero-title">Kenali Kuliner,<br><span>Kenali Kupang.</span></h1>
+          <p class="hero-description">Temukan cerita makanan khas, galeri, audio, dan informasi lokasi kuliner serta UMKM di Kota Kupang.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kuliner">Jelajahi Kuliner <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#lokasi">Cari Lokasi</a>
+          </div>
+          <div class="hero-note"><span aria-hidden="true">✦</span> Informasi kuliner dalam satu tempat</div>
+        </div>
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Hidangan makanan tersaji di atas meja" onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+          <div class="image-fallback" hidden aria-hidden="true">🍲<br><span>Cita Rasa Lokal</span></div>
+          <div class="floating-card"><span class="floating-icon" aria-hidden="true">📍</span><span><strong>Kota Kupang</strong><small>Nusa Tenggara Timur</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="profil" aria-labelledby="profil-title">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">TENTANG KULINER KUPANG</p>
+          <h2 id="profil-title">Lebih dari sekadar makanan</h2>
+        </div>
+        <div>
+          <p>Kuliner adalah bagian dari cerita, kebiasaan, dan kehidupan masyarakat. Website ini menjadi katalog digital untuk mengenal makanan khas Nusa Tenggara Timur serta membantu pengunjung mencari informasi kuliner lokal.</p>
+          <p class="small-note">Catatan: deskripsi pada website ini merupakan pengenalan umum. Informasi pemilik usaha, harga, jam buka, dan alamat perlu diverifikasi langsung sebelum dipublikasikan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="kuliner" aria-labelledby="kuliner-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">KATALOG PILIHAN</p>
+            <h2 id="kuliner-title">Jelajahi Kuliner</h2>
+            <p class="section-lead">Pilih kartu untuk membaca informasi dan membuka tautan terkait.</p>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Cari makanan</span>
+            <span aria-hidden="true">⌕</span>
+            <input type="search" id="searchInput" placeholder="Cari makanan..." autocomplete="off">
+          </label>
+        </div>
+        <p id="searchStatus" class="search-status" aria-live="polite"></p>
+        <div class="food-grid" id="foodGrid">
+          <article class="food-card" data-search="sei sapi se'i daging asap makanan khas">
+            <img src="se'i.jpg" alt="Hidangan daging panggang" loading="lazy">
+            <div class="food-card-body">
+              <span class="tag">Makanan</span>
+              <h3>Se'i Sapi</h3>
+              <p>Daging yang diolah dengan teknik pengasapan dan dikenal sebagai salah satu kuliner populer dari Nusa Tenggara Timur.</p>
+              <div class="card-links"><button class="text-button detail-button" data-food="sei">Lihat detail →</button><a href="#lokasi">Cari lokasi</a></div>
+            </div>
+          </article>
+          <article class="food-card" data-search="jagung bose jagung kacang makanan tradisional">
+            <img src="bose.jpg" alt="Jagung sebagai bahan makanan" loading="lazy">
+            <div class="food-card-body">
+              <span class="tag">Tradisional</span>
+              <h3>Jagung Bose</h3>
+              <p>Hidangan berbahan dasar jagung yang dimasak bersama kacang-kacangan. Resep dapat berbeda menurut keluarga dan daerah.</p>
+              <div class="card-links"><button class="text-button detail-button" data-food="jagung">Lihat detail →</button><a href="#galeri">Lihat galeri</a></div>
+            </div>
+          </article>
+          <article class="food-card" data-search="sambal luat lombok cabai sambal">
+            <img src="sambal luat.jpg" alt="Sajian makanan dengan bumbu" loading="lazy">
+            <div class="food-card-body">
+              <span class="tag">Pelengkap</span>
+              <h3>Sambal Lu'at</h3>
+              <p>Sambal segar yang sering menjadi pelengkap hidangan. Bahan dan tingkat kepedasannya dapat bervariasi.</p>
+              <div class="card-links"><button class="text-button detail-button" data-food="sambal">Lihat detail →</button><a href="#audio">Dengarkan</a></div>
+            </div>
+          </article>
+          <article class="food-card" data-search="jagung katemak sayur kacang makanan">
+            <img src="jagung katemak.jpg" alt="Hidangan sayuran dan bahan segar" loading="lazy">
+            <div class="food-card-body">
+              <span class="tag">Tradisional</span>
+              <h3>Katemak</h3>
+              <p>Hidangan rumahan yang dapat berisi jagung, kacang-kacangan, dan sayuran sesuai kebiasaan setempat.</p>
+              <div class="card-links"><button class="text-button detail-button" data-food="katemak">Lihat detail →</button><a href="#profil">Tentang kuliner</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState" hidden>Tidak ada kuliner yang cocok dengan kata pencarian tersebut.</div>
+      </div>
+    </section>
+
+    <section class="section" id="galeri" aria-labelledby="galeri-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">CERITA DALAM GAMBAR</p><h2 id="galeri-title">Galeri Kuliner</h2></div>
+          <p class="section-lead">berbagai foto kuliner</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-large"><img src="ANEKAN MAKANAN.png" alt="Aneka hidangan di atas meja" loading="lazy"><figcaption>Ragam hidangan</figcaption></figure>
+          <figure class="gallery-item"><img src="olahan daging sapi.jpg" alt="Hidangan daging panggang" loading="lazy"><figcaption>Olahan daging</figcaption></figure>
+          <figure class="gallery-item"><img src="BAHAN LOKAL.png" alt="Makanan dengan sayuran segar" loading="lazy"><figcaption>Bahan lokal</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section audio-section" id="audio" aria-labelledby="audio-title">
+      <div class="container audio-panel">
+        <div class="audio-icon" aria-hidden="true">♫</div>
+        <div class="audio-copy">
+          <p class="eyebrow">DENGARKAN INFORMASI</p>
+          <h2 id="audio-title">Audio Kuliner</h2>
+          <p>Tekan tombol untuk mendengarkan pengenalan singkat melalui fitur suara pada browser. Suara ini dibuat dengan text-to-speech, bukan rekaman penutur bahasa daerah.</p>
+          <div class="audio-actions">
+            <button class="button button-primary" id="speakButton" type="button">▶ Putar informasi</button>
+            <button class="button button-outline" id="stopSpeakButton" type="button">■ Hentikan</button>
+          </div>
+          <p id="audioStatus" class="small-note" aria-live="polite">Fitur suara membutuhkan browser yang mendukung text-to-speech.</p>
+          <details><summary>Baca transkrip audio</summary><p id="audioTranscript">Selamat datang di Kuliner Kupang. Melalui website ini, kamu dapat mengenal beragam kuliner dari Nusa Tenggara Timur, melihat galeri, dan mencari informasi lokasi usaha kuliner. Pastikan informasi usaha diperiksa sebelum berkunjung.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="lokasi" aria-labelledby="lokasi-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">TEMUKAN DI SEKITARMU</p><h2 id="lokasi-title">Lokasi Kuliner</h2><p class="section-lead">Buka pencarian peta untuk menemukan warung dan UMKM kuliner di Kota Kupang.</p></div>
+        </div>
+        <div class="location-grid">
+          <article class="location-card">
+            <div class="location-symbol" aria-hidden="true">📍</div>
+            <div><h3>Kota Kupang</h3><p>Jelajahi tempat makan dan kuliner yang terdaftar di area Kota Kupang.</p><a class="button button-primary" href="https://www.google.com/maps/search/kuliner+di+Kota+Kupang/" target="_blank" rel="noopener noreferrer">Cari di Google Maps ↗</a></div>
+          </article>
+          <article class="location-card">
+            <div class="location-symbol" aria-hidden="true">🍽️</div>
+            <div><h3>Warung Lokal</h3><p>Gunakan pencarian peta untuk melihat warung lokal di sekitar tujuanmu.</p><a class="button button-primary" href="https://www.google.com/maps/search/warung+makan+Kupang/" target="_blank" rel="noopener noreferrer">Cari warung ↗</a></div>
+          </article>
+          <article class="location-card">
+            <div class="location-symbol" aria-hidden="true">🧺</div>
+            <div><h3>UMKM Kuliner</h3><p>Temukan usaha kuliner lokal dan periksa jam buka serta alamat sebelum datang.</p><a class="button button-primary" href="https://www.google.com/maps/search/UMKM+kuliner+Kupang/" target="_blank" rel="noopener noreferrer">Cari UMKM ↗</a></div>
+          </article>
+        </div>
+        <p class="small-note">Peta akan membuka situs Google Maps. Website contoh ini belum menyimpan lokasi UMKM secara langsung; hasil pencarian dapat berubah sesuai data peta.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sitemap" aria-labelledby="sitemap-title">
+      <div class="container sitemap-panel">
+        <div><p class="eyebrow">JANGAN TERSesat</p><h2 id="sitemap-title">Sitemap Website</h2><p>Gunakan daftar ini untuk berpindah ke bagian mana pun tanpa harus mengikuti urutan tertentu.</p></div>
+        <div class="sitemap-links">
+          <a href="#beranda">⌂ Beranda</a><a href="#profil">Profil Kuliner</a><a href="#kuliner">Makanan Khas</a><a href="#galeri">Galeri Foto</a><a href="#audio">Audio Kuliner</a><a href="#lokasi">Peta Lokasi</a><a href="#tentang">Tentang Proyek</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="tentang" aria-labelledby="tentang-title">
+      <div class="container about-grid">
+        <div><p class="eyebrow">TENTANG PROYEK</p><h2 id="tentang-title">Teknologi untuk memperkenalkan budaya lokal</h2></div>
+        <div><p>Kuliner Kupang merupakan contoh proyek Mini OBE tentang arsitektur hypermedia interaktif. Tautan menghubungkan halaman profil, katalog, galeri, audio, dan lokasi.</p><p>Pengembangan selanjutnya dapat mencakup OCR untuk membaca menu dari foto, penerjemahan berbantuan AI, dan text-to-speech. Hasil AI perlu diperiksa manusia agar informasi tetap akurat.</p><p class="small-note">Dibuat untuk keperluan pembelajaran. Data usaha, foto, harga, dan alamat harus diperiksa serta dilengkapi oleh pengelola.</p></div>
+      </div>
+      <div class="upload-box">
+        <p>
+          Laporan perancangan website multimedia
+        </p>
+        <div class="pdf-container">
+          <iframe
+                src="LAPORAN PERANCANGAN WEBSITE MULTIMEDIA kelompok 7.pdf"
+                width="100%"
+                height="600px"
+                style="border: none; border-radius: 15px;">
+              </iframe>
+              src="LAPORAN PERANCANGAN WEBSITE MULTIMEDIA kelompok7"
+            width="100%"
+            height="600px"
+            style="border: none; border-radius: 15px;">
+        </iframe>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <a
+            href="LAPORAN PERANCANGAN WEBSITE MULTIMEDIA kelompok 7.pdf"
+            target="_blank"
+            class="upload-label"
+            style="text-decoration: none; display: inline-block;">
+            📖 Buka PDF
+        </a>
+
+        <a
+            href="LAPORAN PERANCANGAN WEBSITE MULTIMEDIA kelompok 7.pdf"
+            download
+            class="upload-label"
+            style="text-decoration: none; display: inline-block;">
+            📥 Download PDF
+        </a>
+    </div>
+
+</div>
+
+📖 Buka PDF di Tab Baru
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#beranda"><span aria-hidden="true">🍴</span><span>Kuliner <strong>Kupang</strong></span></a>
+      <p>© <span id="year"></span> Kuliner Kupang · Proyek Mini OBE</p>
+      <a href="#beranda">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <div class="breadcrumb-bar" aria-label="Navigasi posisi halaman">
+    <div class="container breadcrumb-inner">
+      <span>Posisi:</span> <a href="#beranda">Home</a><span aria-hidden="true">›</span><span id="breadcrumbCurrent" aria-current="location">Beranda</span>
+      <a class="home-quick" href="#beranda" aria-label="Kembali ke beranda">⌂ Home</a>
+    </div>
+  </div>
+
+  <dialog id="foodDialog" class="food-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><h2 id="dialogTitle">Detail Kuliner</h2><button id="closeDialog" class="close-button" type="button" aria-label="Tutup detail">×</button></div>
+    <div id="dialogContent"></div>
+    <div class="dialog-actions"><button id="speakDetailButton" class="button button-primary" type="button">▶ Dengarkan detail</button><a class="button button-outline" href="#lokasi" id="dialogLocationLink">Cari lokasi</a></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
